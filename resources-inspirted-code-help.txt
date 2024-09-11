@@ -1,0 +1,66 @@
+Remove underline from hyperlinks
+- https://kb.blackbaud.com/knowledgebase/Article/103613
+
+videos in html
+- https://www.w3schools.com/html/html_youtube.asp
+
+How to clear a text field
+- https://www.geeksforgeeks.org/html-clearing-the-input-field/
+
+My clear button keeps refreshing my page instead if just clearing my input:
+- https://stackoverflow.com/questions/35725859/why-do-my-html-buttons-refresh-the-page-why-cant-i-get-my-new-html-dom-element
+
+Example form action:
+- https://www.w3schools.com/tags/att_form_action.asp
+
+Emoji Entities
+- https://www.quackit.com/character_sets/emoji/emoji_v3.0/unicode_emoji_v3.0_characters_all.cfm
+
+Free emaill API from Migs
+- https://web3forms.com/
+
+Cool button styling
+- https://www.w3schools.com/css/css3_buttons.asp
+- https://www.w3schools.com/howto/howto_css_animate_buttons.asp
+
+How to increase font size without moving other elements:
+- https://stackoverflow.com/questions/14277153/change-font-size-on-hover-move-other-divs
+- or just do this:
+        *    /* h1, center align */
+        *    h1 {
+        *        font-size: 3rem;
+        *        text-align: center;
+        *        text-shadow: 5px 5px 10px rgb(31, 253, 31, 0.7);
+        *        transition-duration: 0.4s;
+        *        
+        *        /* This is how to prevent elements below it from moving */
+        *        margin-top: 0px;
+        *        margin-bottom: 0px;
+        *    }
+        *
+        *    h1:hover {
+        *        font-size: 6rem;
+        *    }
+
+Media @ explanation:
+- https://www.w3schools.com/cssref/css3_pr_mediaquery.php
+
+Scrollable Table in HTML
+- https://stackoverflow.com/questions/40669221/html-table-scroll-on-phone
+
+How to resize checkboxes
+- https://www.geeksforgeeks.org/how-to-set-checkbox-size-in-html-css/
+
+Inspiration for contact me form for mobile & desktop devices:
+- https://stripe.com/contact/sales
+
+Box shadows:
+- https://www.w3schools.com/cssref/css3_pr_box-shadow.php
+
+CSS Selector by attribute:
+- https://www.w3schools.com/css/css_attribute_selectors.asp
+
+
+
+
+

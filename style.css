@@ -1,0 +1,546 @@
+/* Use border-box in all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Set the font family to 'Plus Jakarta Sans' from google fonts and set it to a weight of 700 */
+html {
+    font-family: "Plus Jakarta Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Set the body style */
+/* 480px and below, this will be in effect */
+body {
+    /*background: linear-gradient(rgb(19, 19, 19), rgb(0, 63, 55), rgb(19, 19, 19));*/
+    background-color:rgb(19, 19, 19);
+    color: rgb(31, 253, 31);
+    line-height: 2rem;
+    border: green 5px solid;        /* adds a green 5px border around the body */
+    margin: 24px;
+    padding: 32px;
+}
+
+/* Remove underline from anchors */
+a {
+    text-decoration: none;
+    color: rgb(154, 255, 175);
+}
+
+/* This wil set the font weight for <p>, <li> and <td> elements in one css rule */
+p, li, td {
+    font-weight: 300;
+}
+
+/* Add an underline when hovering anchors */
+a:hover {
+    text-decoration: underline;
+}
+
+/* About me */
+.about-me {
+    text-align: center;
+    margin: 0;
+    padding: 32px;
+
+    /* This will add a background image to the about-me section */
+    background-image: url("https://images.unsplash.com/photo-1641002921619-4db51d58c21f?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size:cover;
+}
+
+/* Set profile picture rounded */
+.about-me img {
+    border-radius: 50%;
+    border: rgb(31, 253, 31) 2px dotted;
+    height: 350px;
+
+    /* Add transition duration to profile image */
+    transition-duration: 0.4s;
+}
+
+/* Set profile picture upon hover */
+.about-me img:hover {
+    border-radius: 25%;
+}
+
+/* Set h1 font-size */
+h1 {
+    font-size: 3rem;
+    text-shadow: 5px 5px 10px rgb(31, 253, 31, 0.7);
+    transition-duration: 0.4s;
+}
+
+/* Add expand animation effect using transition */
+h1:hover {
+    font-size: 5rem;
+}
+
+/* Set contact information to bottom right */
+.contact p {
+    line-height: 0px;
+    transition-duration: 0.4s;
+}
+
+/* Small message below projects */
+.message {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Apply padding to headers to provide spacing and ensure content doesn't feel cramped */
+h1, h2, h3 {
+    padding-bottom: 2rem;
+}
+
+/* This will implement the css box-model such as margin, padding & border into each section */
+.sections {
+    /* Add a border below each section */
+    border-bottom: green 5px solid;
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+/****************** Adjusted form below to capture the same look and feel of example ******************/
+
+
+/* Set textarea & input placeholder text color to half transparent */
+textarea::placeholder, input::placeholder {
+    color: rgb(31, 253, 31, 0.4);
+}
+
+/* Add padding-bottom to socials section */
+.socials {
+    padding-bottom: 96px;
+}
+
+/* Set all h2 elements to uppercase */
+h2 {
+    font-size: 2.3rem;
+}
+
+/* Between 480px - 999px, this will be in effect */
+/* Iphone 13 mini */
+@media (min-width: 480px) {
+
+    /* Set all h2 tags */
+    h2 {
+        font-size: 4rem;
+    }
+
+    /* Select all h3 tags */
+    h3 {
+        font-size: 2.7rem;
+    }
+
+    /* For all table head elements */
+    th {
+        font-size: 2.5rem;
+    }
+    
+    /* Select all lists, table data and paragraphs */
+    li, td, p
+    {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    /* Add expand animation effect using transition */
+    .contact p:hover {
+        font-size: 2.2rem;
+    }
+
+    /*******************************************/
+    /******************** Inputs ***************/
+
+    /* Remove outlines on all decendants of form element */
+    form * {
+        outline: none;
+    }
+
+    /* Adds padding on the left side of the checkbox questions */
+    .checkbox-questions {
+        line-height: 32px;
+        padding-left: 8px;
+    }
+
+    .container-forms {
+        padding: 32px;
+        border: none;
+        box-shadow: 20px 20px 50px rgb(8, 8, 8);
+        background-color: rgb(37, 37, 37);
+        border-radius: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Container form items*/
+    .container-forms-items {
+        font-size: 2.5rem;
+        /* Give space under each container item */
+        margin-bottom: 32px;
+    }
+
+    /* Give space under labels for each form */
+    .labels {
+        margin-bottom: 50px;
+    }
+
+    /* Align to right side */
+    .inputs {
+        right: 0;
+    }
+    /* Give these the same size as paragraphs */
+    .inputs > input,
+    .inputs > select,
+    .checkbox-questions > label,
+    .checkbox-questions > p,
+    textarea,
+    .labels > p
+    {
+        font-size: 2.5rem;
+    }
+
+    /* Increase checkbox size on mobile */
+    .checkbox-questions > input {
+        transform: scale(2);
+        margin-bottom: 32px;    /* Give space under each checkbox input */
+    }
+
+    /* Add margin on left side of label for checboxes */
+    .checkbox-questions > label {
+        margin-left: 24px;
+    }
+
+    /* Select all inputs in our form */
+    .form-text {
+        padding: 8px;
+        padding-left: 32px;
+        background-color: rgba(19, 19, 19);
+        border: none;
+        color: rgb(31, 253, 31);
+        width: 100%;
+        height: 100px;
+        border-radius: 15px;
+    }
+
+    /* Select the textarea input in our form */
+    textarea[class="form-text"] {
+        height: 400px;
+    }
+
+    /******************** Inputs ***************/
+    /*******************************************/
+
+    /*******************************************/
+    /******************* Buttons ***************/
+
+        
+    /* Add css stylng to buttons */
+    button {
+        /* makes the button transparent */
+        background-color: rgba(255,255,255, 0);
+        transition-duration: 0.4s;
+
+        /* removes default borders */
+        border: rgb(31, 253, 31) 2px solid;
+
+        color: rgb(31, 253, 31);
+        padding: 10px;
+        font-size: 2.5rem;
+    }
+
+    /* Add css stylng to buttons on hover */
+    /* Add button hover effects */
+    button:hover {
+        /* makes the button green*/
+        background-color: rgb(31, 253, 31);
+        color: black;
+        /* makes the button green*/
+        transform: translateY(4px);
+    }
+
+    /* Add css stylng to buttons on active (being clicked) */
+    button:active {
+        background-color: rgb(8, 99, 8);
+    }
+
+    /* Add flexbox to our three butons so that we can align to the end */
+    .btns {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        padding-top: 16px;
+    }
+    /******************* Buttons ***************/
+    /*******************************************/
+
+    /* Format each section under technologies in flexbox, row, and space-between */
+    .technologies {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Center tools table*/
+    .Tools {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    /* Horizontal spacing between each th element */
+    table {
+        border-spacing: 5rem 3rem;
+    }
+    
+    /* Projects item */
+    .game-div {
+        /* Give space between one game and the next game item */
+        margin-bottom: 5rem; 
+    }
+    
+    /* Project item images */
+    .game-div > div > img {
+        width: 100%;
+        transition-duration: 0.4s;
+    }
+    
+    /* Projects, container for header & paragraph */
+    .game-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+
+        /* Give space on top of game title header and its image above it */
+        margin-top: 2rem;
+    }
+    
+    .game-header > div > h3,    /* Projects, headers (Game title) */
+    .game-header > div > p      /* Projects, paragraphs (Game description) */
+    {
+        bottom: 0;
+        margin: 0;
+    }
+}
+
+/* 1000px or greater, this will be in effect */
+/* Desktop computer */
+@media (min-width: 1000px) {
+
+    /* Set all h2 tags */
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    /* Select all h3 tags */
+    h3 {
+        font-size: 2rem;
+    }
+
+    /* For all table head elements */
+    th {
+        font-size: 1.8rem;
+    }
+
+    /* Select all lists, table data and paragraphs */
+    li, td, p, label
+    {
+        font-size: 1.3rem;
+        line-height: 3rem;
+    }
+
+    /* Add expand animation effect using transition */
+    .contact p:hover {
+        font-size: 1.5rem;
+    }
+
+    /*******************************************/
+    /******************** Inputs ***************/
+
+    /* Remove outlines on all decendants of form element */
+    form * {
+        outline: none;
+    }
+
+    /* Adds padding on the left side of the checkbox questions */
+    .checkbox-questions {
+        line-height: 32px;
+        padding-left: 8px;
+    }
+
+    .container-forms {
+        display: flex;
+        justify-content: center;
+        line-height: 10px;
+        border: none;
+        box-shadow: 20px 20px 50px rgb(8, 8, 8);
+        background-color: rgb(37, 37, 37);
+        border-radius: 10px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .container-forms-items {
+        display: flex;
+        justify-content: space-between;
+        /* This is only here so I can see the border colors for labels and inputs */
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    /* Give space under a form label */
+    /* Give space to the right of a form label */
+    .labels {
+        margin-bottom: 16px;
+        margin-right: 64px;
+    }
+
+    /* Align to right side */
+    .inputs {
+        right: 0;
+    }
+
+    /* Give these the same size as paragraphs */
+    .inputs > input,
+    .inputs > select,
+    .checkbox-questions > label,
+    .checkbox-questions > p,
+    textarea,
+    .labels > p
+    {
+        font-size: 1.5rem;
+    }
+
+    /* Set checkbox size */
+    .checkbox-questions > input {
+        transform: scale(2);
+        margin-bottom: 20px;
+    }
+
+    /* Add margin on left side of label for checkboxes */
+    .checkbox-questions > label {
+        margin-left: 16px;
+    }
+
+    /* Set a dotted border around our textarea, inputs that have type text and our select element */
+    .form-text {
+        padding: 8px;
+        padding-left: 16px;
+        background-color: rgba(2, 2, 2, 0.4);
+        border: none;
+        color: rgb(31, 253, 31);
+        margin-left: 6px;
+        width: 300px;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    /******************** Inputs ***************/
+    /*******************************************/
+
+    /*******************************************/
+    /******************* Buttons ***************/
+
+        
+    /* Add css stylng to buttons */
+    button {
+        /* makes the button transparent */
+        background-color: rgba(255,255,255, 0);
+        transition-duration: 0.4s;
+
+        /* removes default borders */
+        border: rgb(31, 253, 31) 2px solid;
+
+        color: rgb(31, 253, 31);
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Add css stylng to buttons on hover */
+    /* Add button hover effects */
+    button:hover {
+        /* makes the button green*/
+        background-color: rgb(31, 253, 31);
+        color: black;
+        /* makes the button green*/
+        transform: translateY(4px);
+    }
+
+    /* Add css stylng to buttons on active (being clicked) */
+    button:active {
+        background-color: rgb(8, 99, 8);
+    }
+
+    /* Add flexbox to our three butons so that we can align to the end */
+    .btns {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        padding-top: 16px;
+    }
+    /******************* Buttons ***************/
+    /*******************************************/
+
+    /* Format each section under technologies in flexbox, row, and space-between */
+    .technologies {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Center tools table*/
+    .Tools {
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    /* Horizontal spacing between each th element */
+    table {
+        border-spacing: 10rem 0px;
+    }
+
+    /* Projects */
+    .game-div {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    /* Select all divs under game-dvi (Game title div) class */
+    .game-div > div {
+        margin-top: 0px;
+    }
+
+    /* Project images */
+    .game-div > div > img {
+        height: 250px;
+        transition-duration: 0.4s;
+    }
+
+    /* Projects */
+    .game-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        width: 100%;
+    }
+
+    /* Projects */
+    .game-header > div > h3 {
+        position: absolute;
+        top: 0;
+        margin: 0;
+    }
+
+    /* Projects */
+    .game-header > div > p {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+    }
+
+}

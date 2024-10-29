@@ -76,12 +76,6 @@ h1:hover {
     font-size: 5rem;
 }
 
-/* Set contact information to bottom right */
-.contact p {
-    line-height: 0px;
-    transition-duration: 0.4s;
-}
-
 /* Small message below projects */
 .message {
     display: flex;
@@ -102,12 +96,6 @@ h1, h2, h3 {
 }
 
 /****************** Adjusted form below to capture the same look and feel of example ******************/
-
-
-/* Set textarea & input placeholder text color to half transparent */
-textarea::placeholder, input::placeholder {
-    color: rgb(31, 253, 31, 0.4);
-}
 
 /* Add padding-bottom to socials section */
 .socials {
@@ -144,135 +132,7 @@ h2 {
         font-size: 2rem;
         line-height: 3rem;
     }
-
-    /* Add expand animation effect using transition */
-    .contact p:hover {
-        font-size: 2.2rem;
-    }
-
-    /*******************************************/
-    /******************** Inputs ***************/
-
-    /* Remove outlines on all decendants of form element */
-    form * {
-        outline: none;
-    }
-
-    /* Adds padding on the left side of the checkbox questions */
-    .checkbox-questions {
-        line-height: 32px;
-        padding-left: 8px;
-    }
-
-    .container-forms {
-        padding: 32px;
-        border: none;
-        box-shadow: 20px 20px 50px rgb(8, 8, 8);
-        background-color: rgb(37, 37, 37);
-        border-radius: 10px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    /* Container form items*/
-    .container-forms-items {
-        font-size: 2.5rem;
-        /* Give space under each container item */
-        margin-bottom: 32px;
-    }
-
-    /* Give space under labels for each form */
-    .labels {
-        margin-bottom: 50px;
-    }
-
-    /* Align to right side */
-    .inputs {
-        right: 0;
-    }
-    /* Give these the same size as paragraphs */
-    .inputs > input,
-    .inputs > select,
-    .checkbox-questions > label,
-    .checkbox-questions > p,
-    textarea,
-    .labels > p
-    {
-        font-size: 2.5rem;
-    }
-
-    /* Increase checkbox size on mobile */
-    .checkbox-questions > input {
-        transform: scale(2);
-        margin-bottom: 32px;    /* Give space under each checkbox input */
-    }
-
-    /* Add margin on left side of label for checboxes */
-    .checkbox-questions > label {
-        margin-left: 24px;
-    }
-
-    /* Select all inputs in our form */
-    .form-text {
-        padding: 8px;
-        padding-left: 32px;
-        background-color: rgba(19, 19, 19);
-        border: none;
-        color: rgb(31, 253, 31);
-        width: 100%;
-        height: 100px;
-        border-radius: 15px;
-    }
-
-    /* Select the textarea input in our form */
-    textarea[class="form-text"] {
-        height: 400px;
-    }
-
-    /******************** Inputs ***************/
-    /*******************************************/
-
-    /*******************************************/
-    /******************* Buttons ***************/
-
-        
-    /* Add css stylng to buttons */
-    button {
-        /* makes the button transparent */
-        background-color: rgba(255,255,255, 0);
-        transition-duration: 0.4s;
-
-        /* removes default borders */
-        border: rgb(31, 253, 31) 2px solid;
-
-        color: rgb(31, 253, 31);
-        padding: 10px;
-        font-size: 2.5rem;
-    }
-
-    /* Add css stylng to buttons on hover */
-    /* Add button hover effects */
-    button:hover {
-        /* makes the button green*/
-        background-color: rgb(31, 253, 31);
-        color: black;
-        /* makes the button green*/
-        transform: translateY(4px);
-    }
-
-    /* Add css stylng to buttons on active (being clicked) */
-    button:active {
-        background-color: rgb(8, 99, 8);
-    }
-
-    /* Add flexbox to our three butons so that we can align to the end */
-    .btns {
-        display: flex;
-        justify-content: flex-end;
-        gap: 8px;
-        padding-top: 16px;
-    }
-    /******************* Buttons ***************/
+    
     /*******************************************/
 
     /* Format each section under technologies in flexbox, row, and space-between */
@@ -351,137 +211,8 @@ h2 {
         line-height: 3rem;
     }
 
-    /* Add expand animation effect using transition */
-    .contact p:hover {
-        font-size: 1.5rem;
-    }
-
-    /*******************************************/
-    /******************** Inputs ***************/
-
-    /* Remove outlines on all decendants of form element */
-    form * {
-        outline: none;
-    }
-
-    /* Adds padding on the left side of the checkbox questions */
-    .checkbox-questions {
-        line-height: 32px;
-        padding-left: 8px;
-    }
-
-    .container-forms {
-        display: flex;
-        justify-content: center;
-        line-height: 10px;
-        border: none;
-        box-shadow: 20px 20px 50px rgb(8, 8, 8);
-        background-color: rgb(37, 37, 37);
-        border-radius: 10px;
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    .container-forms-items {
-        display: flex;
-        justify-content: space-between;
-        /* This is only here so I can see the border colors for labels and inputs */
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-
-    /* Give space under a form label */
-    /* Give space to the right of a form label */
-    .labels {
-        margin-bottom: 16px;
-        margin-right: 64px;
-    }
-
-    /* Align to right side */
-    .inputs {
-        right: 0;
-    }
-
-    /* Give these the same size as paragraphs */
-    .inputs > input,
-    .inputs > select,
-    .checkbox-questions > label,
-    .checkbox-questions > p,
-    textarea,
-    .labels > p
-    {
-        font-size: 1.5rem;
-    }
-
-    /* Set checkbox size */
-    .checkbox-questions > input {
-        transform: scale(2);
-        margin-bottom: 20px;
-    }
-
-    /* Add margin on left side of label for checkboxes */
-    .checkbox-questions > label {
-        margin-left: 16px;
-    }
-
-    /* Set a dotted border around our textarea, inputs that have type text and our select element */
-    .form-text {
-        padding: 8px;
-        padding-left: 16px;
-        background-color: rgba(2, 2, 2, 0.4);
-        border: none;
-        color: rgb(31, 253, 31);
-        margin-left: 6px;
-        width: 300px;
-        height: 100%;
-        border-radius: 15px;
-    }
-
-    /******************** Inputs ***************/
     /*******************************************/
 
-    /*******************************************/
-    /******************* Buttons ***************/
-
-        
-    /* Add css stylng to buttons */
-    button {
-        /* makes the button transparent */
-        background-color: rgba(255,255,255, 0);
-        transition-duration: 0.4s;
-
-        /* removes default borders */
-        border: rgb(31, 253, 31) 2px solid;
-
-        color: rgb(31, 253, 31);
-        padding: 10px;
-        font-size: 1rem;
-    }
-
-    /* Add css stylng to buttons on hover */
-    /* Add button hover effects */
-    button:hover {
-        /* makes the button green*/
-        background-color: rgb(31, 253, 31);
-        color: black;
-        /* makes the button green*/
-        transform: translateY(4px);
-    }
-
-    /* Add css stylng to buttons on active (being clicked) */
-    button:active {
-        background-color: rgb(8, 99, 8);
-    }
-
-    /* Add flexbox to our three butons so that we can align to the end */
-    .btns {
-        display: flex;
-        justify-content: flex-end;
-        gap: 8px;
-        padding-top: 16px;
-    }
-    /******************* Buttons ***************/
-    /*******************************************/
 
     /* Format each section under technologies in flexbox, row, and space-between */
     .technologies {

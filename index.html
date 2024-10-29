@@ -297,139 +297,6 @@
 
     <!-- Footer -->
     <footer>
-      <!-- Contact Me Form -->
-      <section class="sections">
-        <!-- We made input for name, email and message required, and the message has a min and max length -->
-        <!-- Recommended to add a '#' to the form action to simulate a form submission -->
-        <h2>Contact Me</h2>
-
-        <!-- Container for forms -->
-        <div class="container-forms">
-          <form action="#" method="get">
-
-              <!-- Name -->
-              <div class="container-forms-items">
-                <!-- label -->
-                <div class="labels">
-                  <label for="name">Name </label>
-                </div>
-                <!-- input -->
-                <div class="inputs">
-                  <input class="form-text" type="text" name="name" id="name" placeholder="Jean Doe" required>
-                </div>
-              </div>
-
-              <!-- Email -->
-              <div class="container-forms-items">
-                <!-- label -->
-                <div class="labels">
-                  <label for="email">Email </label>
-                </div>
-                <!-- input -->
-                <div class="inputs">
-                  <input class="form-text" type="text" name="email" id="email" placeholder="JeanDoe@gmail.com" required>
-                </div>
-              </div>
-
-              <!-- Organization -->
-              <div class="container-forms-items">
-                <!-- label -->
-                <div class="labels">
-                  <label for="organization">Organization </label>
-                </div>
-                <!-- input -->
-                <div class="inputs">
-                  <input class="form-text" type="text" name="organization" id="organization" placeholder="Amazon" required>
-                </div>
-              </div>
-
-              <!-- Role -->
-              <div class="container-forms-items">
-                <!-- label -->
-                <div class="labels">
-                  <label for="role">Role </label>
-                </div>
-                <!-- input -->
-                <div class="inputs">
-                  <input class="form-text" type="text" name="role" id="role" placeholder="Software Engineer" required>
-                </div>
-              </div>
-
-              <!-- Reason for Contact -->
-              <div class="container-forms-items">
-                <!-- label -->
-                <div class="labels">
-                  <label for="reason">Reason for contact </label>
-                </div>
-    
-                <!-- input -->
-                <div class="inputs">
-                  <select class="form-text" name="reason" id="reason" required>
-                    <option value="">--Choose a reason--</option>
-                    <option value="intern">Internship Offer</option>
-                    <option value="job">Job Offer</option>
-                    <option value="job">Hackathon</option>
-                    <option value="connect">Connect!</option>
-                  </select>
-                </div>
-              </div>
-              
-              <!-- Checkbox Question -->
-              <div class="checkbox-questions">
-                <p><b>What time of the day do you code best?</b></p>
-
-                <!-- Checkbox: Early Bird-->
-                <input type="checkbox" name="early-bird" id="early-bird">
-                <label for="early-bird">Early Bird &#x1F426;</label>
-                <br>
-
-                <!-- Checkbox: Noon Bird-->
-                <input type="checkbox" name="noon-bird" id="noon-bird">
-                <label for="noon-bird">Noon Bird &#x1F985;</label>  
-                <br>
-                
-                <!-- Checkbox: Night Owl-->
-                <input type="checkbox" name="night-bird" id="night-bird">
-                <label for="night-bird">Night Owl &#x1F989;</label>  
-                <br>
-              </div>
-
-              <!-- Message -->
-              <div class="container-forms-items">
-                <!-- label -->
-                <div class="labels">
-                  <p>Message</p>
-                  <label for="msg"></label>
-                </div>
-                <!-- input -->
-                <div class="inputs">
-                  
-                  <!-- Text area for message -->
-                  <textarea class="form-text" placeholder="I would like to connect about creating a mobile game about hotdogs!" 
-                  name="msg" id="msg" 
-                  cols="100" rows="10"
-                  minlength="5"
-                  maxlength="1000" 
-                  required></textarea>
-                  <br>
-
-                  <div class="btns">
-                    <!-- Clear Button -->
-                    <button type="button" onclick="document.getElementById('msg').value = ''">
-                      Clear
-                    </button>
-                    <!-- Reset Button -->
-                    <button type="reset">
-                      Clear All
-                    </button>
-                    <!-- Submit Button -->
-                    <button type="submit">Submit</button>
-                  </div>
-                </div>
-              </div>
-          </form>
-        </div>
-      </section>
 
       <!-- Socials -->
       <section class="socials">
@@ -452,6 +319,7 @@
         <p><b>Website</b> <a href="https://github.com/cmesias/portfolio-cv"><b>repo</b></a></p>
         <p>Learn more about my journey with <a href="https://www.springboard.com/workshops/software-development-career-program/learn#/dashboard">Springboard</a>.</p>
       </section>
+      
     </footer>
   </body>
 </html>
